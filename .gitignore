@@ -1,0 +1,17 @@
+# Eclipse
+.settings
+.vscode
+.project
+.angulardoc.json
+.idea/
+
+# IntelliJ
+.idea/
+*.iml
+
+
+# User-specific stuff
+node_modules
+dist
+logs
+.vscode
