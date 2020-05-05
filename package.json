@@ -25,6 +25,8 @@
     "@angular/router": "~8.2.5",
     "@ng-bootstrap/ng-bootstrap": "^5.0.0",
     "angular-in-memory-web-api": "0.8.0",
+    "@ngx-translate/core": "^11.0.0",
+    "@ngx-translate/http-loader": "^4.0.0",
     "bootstrap": "^4.4.1",
     "core-js": "2.6.11",
     "jasmine-core": "^3.4.0",

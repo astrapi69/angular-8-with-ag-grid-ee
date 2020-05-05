@@ -3,6 +3,7 @@ import {Component, OnInit} from '@angular/core';
 import {GridApi, GridOptions} from "@ag-grid-community/all-modules";
 import {Module} from "@ag-grid-community/core";
 import {AllModules} from "@ag-grid-enterprise/all-modules";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
     selector: 'app-dashboard',
@@ -21,7 +22,8 @@ export class DashboardComponent implements OnInit {
     modules: Module[] = AllModules;
     rowData: any[] = [];
 
-    constructor() {
+    constructor(
+        private translateService: TranslateService) {
     }
 
     ngOnInit() {
@@ -30,6 +32,10 @@ export class DashboardComponent implements OnInit {
         this.gridOptions = {
             rowHeight: 40,
             floatingFilter: true,
+            localeTextFunc: (key: string, defaultValue: string) => {
+                const localeValue = this.translateService.instant(key);
+                return localeValue === key ? defaultValue : localeValue;
+            }
         };
         this.columnDefs = [
             {field: 'make'},
