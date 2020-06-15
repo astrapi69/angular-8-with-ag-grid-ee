@@ -1,7 +1,7 @@
 {
   "rowGroupColumnsEmptyMessage": "Hier her ziehen um die Zeilen Gruppe zu setzen",
-  "groups": "Zeilen Gruppe",
   "pivotColumnsEmptyMessage": "Hier her ziehen um die Spalten Namen zu setzen",
+  "groups": "Zeilen Gruppe",
   "pivots": "Spalten Namen",
   "loadingOoo": "Laden...",
   "page": "Seite",
